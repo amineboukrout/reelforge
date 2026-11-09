@@ -4,6 +4,8 @@
 
 Runs in the browser or as a desktop app (Windows / macOS / Linux). Your API key, upload history and generation history stay on your machine.
 
+![Reelforge Cinema Studio: a camera rig with an ARRI Alexa 65, anamorphic 50mm lens at f/2, wide low-angle 2.39:1 framing, a truck camera move and golden-hour light](docs/screenshot.jpg)
+
 ## Studios
 
 | Studio | What it does |
