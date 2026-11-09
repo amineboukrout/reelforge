@@ -6,6 +6,11 @@ Runs in the browser or as a desktop app (Windows / macOS / Linux). Your API key,
 
 ![Reelforge Cinema Studio: a camera rig with an ARRI Alexa 65, anamorphic 50mm lens at f/2, wide low-angle 2.39:1 framing, a truck camera move and golden-hour light](docs/screenshot.jpg)
 
+<p align="center">
+  <img src="docs/screenshot-mobile.jpg" width="280" alt="Reelforge Video Studio on a phone: start-frame upload, prompt, Veo 3.1 model picker, aspect ratio and resolution options, and a bottom navigation bar for the four studios">
+  <br><sub>On mobile: studios move to a bottom tab bar and the Generate button stays within reach.</sub>
+</p>
+
 ## Studios
 
 | Studio | What it does |
