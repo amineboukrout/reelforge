@@ -1,0 +1,4 @@
+{
+  "$comment": "Add your own Muapi endpoints here (no rebuild needed). Each entry follows ModelDef in src/lib/types.ts. Entries with the same id as a built-in model override it.",
+  "models": []
+}

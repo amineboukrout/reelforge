@@ -1,0 +1,10 @@
+{
+  "name": "Reelforge",
+  "short_name": "Reelforge",
+  "description": "Open-source AI studio for images, video, lip sync and cinematic shots.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#08080b",
+  "theme_color": "#08080b",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "reelforge",
+  "productName": "Reelforge",
+  "version": "0.1.0",
+  "description": "Open-source, self-hosted AI creative studio (Image, Video, Lip Sync, Cinema) powered by Muapi.",
+  "license": "MIT",
+  "type": "module",
+  "main": "electron/main.mjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "start": "node server/index.mjs",
+    "serve": "npm run build && npm start",
+    "sync-models": "node scripts/sync-models.mjs",
+    "desktop": "npm run build && electron .",
+    "desktop:dev": "electron . --dev",
+    "dist": "npm run build && electron-builder",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.1.0",
+    "@fontsource-variable/space-grotesk": "^5.1.0",
+    "lucide-react": "^0.460.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.1"
+  },
+  "build": {
+    "appId": "dev.reelforge.app",
+    "productName": "Reelforge",
+    "files": [
+      "dist/**",
+      "electron/**",
+      "server/**",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "win": { "target": "nsis" },
+    "mac": { "target": "dmg", "category": "public.app-category.graphics-design" },
+    "linux": { "target": "AppImage", "category": "Graphics" }
+  }
+}
