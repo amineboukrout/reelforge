@@ -66,6 +66,15 @@ npm run dist         # package an installer into ./release
 
 The desktop app runs the same local server on `127.0.0.1:47821`. A fixed port keeps your history across restarts. Your API key is encrypted with the OS keychain (Electron `safeStorage`).
 
+#### Releases
+
+[GitHub Actions](.github/workflows/desktop.yml) builds installers for Windows (`.exe`), macOS (`.dmg`, Intel and Apple Silicon) and Linux (`.AppImage`):
+
+- **Push a version tag** (`git tag v0.2.0 && git push --tags`) to build all three and publish them on a [GitHub Release](https://github.com/amineboukrout/reelforge/releases).
+- **Run it manually** from the Actions tab to get the installers as downloadable artifacts, without a release.
+
+The installers are **unsigned**, so Windows SmartScreen and macOS Gatekeeper will warn on first launch. On macOS, right-click the app and choose **Open**. To sign them, add `CSC_LINK` / `CSC_KEY_PASSWORD` (plus Apple notarization secrets) to the repo's secrets.
+
 ## Adding models
 
 **1. Re-sync from Muapi (recommended).** The built-in catalog is generated from Muapi's OpenAPI spec:
